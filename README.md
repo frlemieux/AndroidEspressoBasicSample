@@ -1,6 +1,6 @@
-# Basic sample for Espresso
+# Jetpack Compose Basic sample for Espresso
 
-*If you are new to Espresso, try this sample first.*
+From this sample : [Original project](https://github.com/android/testing-samples/tree/main/ui/espresso/BasicSample)
 
 This project uses the Gradle build system. You don't need an IDE to build and execute it but Android Studio 3.4 is recommended.
 
