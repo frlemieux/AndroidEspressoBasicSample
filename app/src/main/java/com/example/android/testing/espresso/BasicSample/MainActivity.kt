@@ -1,6 +1,5 @@
 package com.example.android.testing.espresso.BasicSample
 
-import android.R.attr
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -74,7 +73,7 @@ fun Screen(
             Text(text = stringResource(R.string.change_text))
         }
         Button(onClick = {
-                val intent = ShowTextActivityKt
+                val intent = ShowTextActivity
                     .newStartIntent(context, text)
                 startActivity(context, intent, null)
         },

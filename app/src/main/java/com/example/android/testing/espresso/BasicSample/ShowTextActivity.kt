@@ -19,10 +19,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.android.testing.espresso.BasicSample.ShowTextActivityKt.Companion.KEY_EXTRA_MESSAGE
+import com.example.android.testing.espresso.BasicSample.ShowTextActivity.Companion.KEY_EXTRA_MESSAGE
 import com.lemieux.tasks.ui.theme.AppTheme
 
-class ShowTextActivityKt : ComponentActivity() {
+class ShowTextActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,7 +42,7 @@ class ShowTextActivityKt : ComponentActivity() {
         const val KEY_EXTRA_MESSAGE: String = "extra_message"
 
         fun newStartIntent(context: Context, text: String): Intent {
-            val newIntent = Intent(context, ShowTextActivityKt::class.java)
+            val newIntent = Intent(context, ShowTextActivity::class.java)
             newIntent.putExtra(KEY_EXTRA_MESSAGE, text)
             return newIntent
         }
